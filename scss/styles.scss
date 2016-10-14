@@ -1,12 +1,9 @@
 
-.container {
-  background-color: lavender;
-  font-family: sans-serif;
-  padding-left: 5%;
-}
-
 body {
-  background-color: lavender;
+  background-image: url(http://share.cameronmcefee.com/nasa_17875A29.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 h1 {
@@ -24,14 +21,12 @@ button {
   border-radius: 6px;
 }
 
-.header {
-  min-height: 50px;
-  background-color: ivory;
-  font-size: 1.5em;
-  font-style: sans-serif;
-  border: 1px solid lightgrey;
+.container {
+  font-family: sans-serif;
+  padding-left: 5%;
 }
 
+
 #lookup {
-  padding-left: 45%;
+  padding-left: 5%;
 }

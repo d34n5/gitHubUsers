@@ -31,4 +31,4 @@ Profile.prototype.getProfile = function(username) {
   });
 };
 
-exports.movieModule = Movie;
+exports.profileModule = Profile;
