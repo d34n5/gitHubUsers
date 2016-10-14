@@ -8,15 +8,25 @@
     <title>GitHub User LookUp</title>
   </head>
   <body>
-    <h1>Git Hub User Look Up</h1>
-    <div class="container">
-      <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" height="300px" alt="octocat" />
-      <form id="user">
-        <h3>GitHub Username Lookup:</h3>
-        <input id="username" type="text" placeholder="username">
-        <button type="submit" name="button">Submit</button>
-      </form>
+    <div class="header">
+      <h5>Welcome to the Git Hub User Database  ~  Enter a GitHUb username to see a list of their most recent repository descriptions!</h5>
+
     </div>
+
+    <div class="container">
+      <h1>Search Git Hub Users!</h1>
+      <div class="container" id="lookup">
+        <form id="user">
+          <h3>GitHub Username Lookup:</h3>
+          <input id="username" type="text" placeholder="username">
+          <button type="submit" name="button">Submit</button>
+        </form>
+
+
+      </div>
+      <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" height="300px" alt="octocat" />
+    </div>
+
     <div id="rpDisplay">
       <h4></h4>
     </div>

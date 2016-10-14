@@ -1,3 +1,37 @@
+
+.container {
+  background-color: lavender;
+  font-family: sans-serif;
+  padding-left: 5%;
+}
+
 body {
   background-color: lavender;
+}
+
+h1 {
+  font-size: 2.75em;
+  padding-top: 3px;
+}
+
+h3, input, button {
+  font-size: 1.75em;
+}
+
+button {
+  background-color: lightgreen;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.header {
+  min-height: 50px;
+  background-color: ivory;
+  font-size: 1.5em;
+  font-style: sans-serif;
+  border: 1px solid lightgrey;
+}
+
+#lookup {
+  padding-left: 45%;
 }
