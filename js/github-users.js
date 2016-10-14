@@ -14,6 +14,6 @@ Profile.prototype.getProfile = function(username){
     });
   };
 
-}
+};
 
 exports.profileModule = Profile;
