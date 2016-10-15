@@ -22,7 +22,7 @@ Profile.prototype.displayRepos = function(){
 Profile.prototype.displayError = function(searchString){
   $('#userInfo').html(" ");
   $('#repos').html(" ");
-  var display = "<h3> Invalid GitHub UserName.  Retry if you insist. </h3>;"
+  var display = "<h3> Invalid GitHub UserName.  Retry if you insist. </h3>";
   $('#error').html(display);
 };
 

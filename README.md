@@ -9,23 +9,15 @@
 This webpage allows users to enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories.
 
 ## Specifications
-1.  
- - Ex. In:
- - Ex. Out:
-2.
- - Ex. In:
- - Ex. Out:
+1.  Take in GitHub Username and return Repo titles & descriptions
+ - Ex. In:  d34n5
+ - Ex. Out:  ["GitHub UserLookup", "Dino-Hangman", "Movie-Synopsis", etc...]
+2.  Return error message if search string does not match a username.
+ - Ex. In:  d34n6
+ - Ex. Out:  "Invalid username.  Retry if you must."
 3.
  - Ex. In:
  - Ex. Out:
-4.
- - Ex. In:
- - Ex. Out:
-5.
- - Ex. In:
- - Ex. Out:
-
-
 
 ## Installation & Set-Up
 1. Clone repository from GitHub (https://github.com/d34n5/github-users) to your local machine (usually to your Desktop) in the Command Line: $ git clone https://github.com/d34n5/github-users

@@ -1,33 +1,20 @@
-// function Profile() {
-//   this.name = null;
-//   this.title = null;
-//   this.desciption = null;
-// }
-//
-// Profile.prototype.getProfile = function(username){
-//   var currentProfile = this;
-//
-//   $.get('https://api.github.com/users/daneden?access_token=' + apiKey).then(function(response){
-//     console.log(response);
-//   });
-// };
-//
-// exports.profileModule = Profile;
 
-
-
+var apiKey = require('./../.env').apiKey;
 
 function Profile() {
-  this.username = null;
-  this.repoName = null;
-  this.repoDescription = null;
+  this.profileInfo = null;
+  this.repos = [];
 }
 
-Profile.prototype.getProfile = function(username) {
-
+Profile.prototype.getProfileInfo = function(username) {
   var currentProfile = this;
-  $.get('https://api.github.com/users/daneden?access_token=' + apiKey).then(function(response){
-    console.log(response);
+  $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response){
+    currentProfile.profileInfo = response;
+    currentProfile.getRepos();
+    currentProfile.displayProfileInfo();
+  })
+  .fail(function(error){
+    currentProfile.displayError(username);
   });
 };
 
