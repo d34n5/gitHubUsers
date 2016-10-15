@@ -2,23 +2,26 @@
 <html>
   <head>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <link rel="stylesheet" href="build/css/styles.css">
+    <link type="text/css" rel="stylesheet" href="build/css/styles.css">
     <title>GitHub User LookUp</title>
   </head>
   <body>
-    <h3>Welcome to the Git Hub User Database  <p> Enter a GitHub username to see a list <br> of their most recent repository descriptions!</h3>
     <div class="container" id="lookup">
+      <h3>Welcome to the Git Hub User Database  <p> Enter a GitHub username to see a list <br> of their most recent repository descriptions!</h3>
       <br>
-      <form id="user">
+      <form id="userSearch" class="form-inline">
         <h3>GitHub Username Lookup:</h3>
-        <input id="username" type="text" placeholder="username">
-        <button type="submit" name="button">Submit</button>
+        <input id="usernameInput" class="form-control" type="text" placeholder="GitHub UserName">
+        <button class="form-control btn-success" type="submit">Submit</button>
       </form>
     </div>
-    <div id="rpDisplay">
-      <h4></h4>
+    <div id="error">
+    </div>
+    <div id="repos">
     </div>
   </body>
 </html>
