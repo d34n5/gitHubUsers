@@ -1,9 +1,11 @@
 
 body {
+  background-color: black;
   background-image: url(http://share.cameronmcefee.com/nasa_17875A29.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
+  background-size: 100%;
+  color: hotpink;
+  text-shadow: 2px 2px black;
 }
 
 h1 {
@@ -15,18 +17,21 @@ h3, input, button {
   font-size: 1.75em;
 }
 
-// button {
-//   background-color: lightgreen;
-//   padding: 6px;
-//   border-radius: 6px;
-// }
-
 .container {
   font-family: sans-serif;
   padding-left: 5%;
 }
 
-
 #lookup {
   padding-left: 5%;
+}
+
+#handle {
+  padding-top: 5%;
+  padding-left: 10%;
+  font-size: 1.5em;
+}
+
+#repos {
+  padding-left: 10%;
 }

@@ -1,20 +1,16 @@
 
 var apiKey = require('./../.env').apiKey;
 
-function Profile() {
-  this.profileInfo = null;
-  this.repos = [];
+function Profile (username) {
+  this.username = username.toString();
 }
 
-Profile.prototype.getProfileInfo = function(username) {
-  var currentProfile = this;
-  $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response){
-    currentProfile.profileInfo = response;
-    currentProfile.getRepos();
-    currentProfile.displayProfileInfo();
-  })
-  .fail(function(error){
-    currentProfile.displayError(username);
+Profile.prototype.getRepos = function(username, displayFunction){
+  $.get('https://api.github.com/users/' + username + '/repos?access_token=' + apiKey).then(function(response){
+    console.log(JSON.stringify(response));
+    displayFunction(response);
+  }).fail(function(error){
+    console.log(error.responseJSON.message);
   });
 };
 
