@@ -3,7 +3,7 @@ var Profile = require('./../js/github-users.js').profileModule;
 
 var showRepos = function(userData){
   userData.forEach(function(data){
-    $('#repos ol').append("<li> Name:  " + data.name + "<br> Description:  " + data.description + "<br></li>");
+    $('#repos ol').append("<p><li> Name:  " + data.name + "<br> Description:  " + data.description + "<br><br></li></p>");
   });
   $('#avatar').append("<img src='" + data.owner.avatar_url + "' alt='user avatar'>");
   $("#error").append(error.responseJSON.message);
