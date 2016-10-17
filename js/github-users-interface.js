@@ -15,8 +15,8 @@ $(document).ready(function(){
     $('#repos ol').html(" ");
     $('#handle').html(" ");
     var username = $("#usernameInput").val();
-    $("#handle").append("Username:  " + username + "<p><br><br> Recent Repos: ");
+    $("#handle").append("Username:  " + username + "<p><br><br> Recent Repositories: ");
     var newProfile = new Profile(username);
-    newProfile.getRepos(newProfile.username, showRepos);
+    newProfile.getProfile(newProfile.username, showRepos);
   });
 });
