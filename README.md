@@ -5,6 +5,8 @@
 
 ### Please check out my work on gh-pages: https://d34n5.github.io/github-users
 
+![screenshot](ss.png)
+
 ## Description & Technologies Used
 This webpage allows users to enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories.
 
